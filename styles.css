@@ -661,3 +661,22 @@ footer p {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Private contact details are replaced by a direct enquiry form. */
+.enquiry-form{width:100%;text-align:left;min-width:0}
+.form-field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+.form-field label{font-size:14px;font-weight:600;line-height:1.5}
+.form-field label span{font-weight:400;opacity:.75}
+.form-field input,.form-field textarea{width:100%;min-width:0;border:1px solid #a9b9cd;border-radius:7px;background:#fff;color:#22262d;font:inherit;font-size:16px;padding:12px 14px;line-height:1.5}
+.form-field textarea{resize:vertical;min-height:140px}
+.form-field input:focus-visible,.form-field textarea:focus-visible{outline:3px solid #3978ff;outline-offset:2px}
+.form-privacy{font-size:13px;line-height:1.6;margin:0 0 20px!important}
+.form-privacy a{text-decoration:underline;text-underline-offset:3px}
+.enquiry-form .button{border:0;cursor:pointer;font:inherit;font-size:14px;font-weight:600}
+.enquiry-form .button:disabled{opacity:.55;cursor:wait;transform:none}
+.form-status,.form-error{font-size:15px;margin-top:16px!important;padding:12px 14px;border-radius:6px}
+.form-status{background:#edf6f1;color:#24523e!important}.form-error{background:#fff0ee;color:#933727!important}
+.form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+
+.contact-alternative{font-size:14px;margin-top:24px}.contact-alternative a{font-weight:600}.contact .button{background:var(--ink);color:var(--white)}.contact .button:hover{background:var(--accent-dark)}

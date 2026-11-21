@@ -140,10 +140,18 @@
         <p class="eyebrow">Get in touch</p>
         <h2>Have a property, business or project worth discussing?</h2>
       </div>
-      <div class="contact-links">
-        <a href="mailto:adam@leishman.com.au"><span>Email</span><strong>adam@leishman.com.au</strong></a>
-        <a href="tel:+61414925000"><span>Phone</span><strong>0414 925 000</strong></a>
-        <a href="https://www.linkedin.com/in/adamleishman/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Connect with Adam <span aria-hidden="true">↗</span></strong></a>
+      <div class="contact-form-wrap"><form class="enquiry-form" method="post" action="https://formspree.io/f/xjyweway" data-contact-form data-endpoint="https://formspree.io/f/xjyweway" aria-label="Contact Adam">
+  <input type="hidden" name="website" value="Adam Leishman">
+  <input type="hidden" name="_subject" value="New enquiry — Adam Leishman">
+  <div class="form-trap" aria-hidden="true"><label>Leave this empty<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <div class="form-field"><label for="contact-name">Your name <span>(optional)</span></label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100"></div>
+  <div class="form-field"><label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+  <div class="form-field"><label for="contact-message">Your message</label><textarea id="contact-message" name="message" rows="5" maxlength="5000" required></textarea></div>
+  <p class="form-privacy">Your details will only be used to respond to your enquiry. Messages are processed by <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener">Formspree</a>.</p>
+  <button class="button" type="submit">Send message</button>
+  <p class="form-status" role="status" aria-live="polite" hidden></p><p class="form-error" role="alert" hidden></p>
+</form>
+        <p class="contact-alternative">Prefer LinkedIn? <a href="https://www.linkedin.com/in/adamleishman/" target="_blank" rel="noopener">Connect with Adam</a></p>
       </div>
     </section>
   </main>
@@ -152,5 +160,7 @@
     <p>© 2026 Adam Leishman</p>
     <p>Caboolture · Moreton Bay · South East Queensland</p>
   </footer>
+  <script src="contact.js" defer></script>
 </body>
 </html>
+
