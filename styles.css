@@ -691,3 +691,19 @@ footer p {
 .about>.section-heading,.contact>div{min-width:0}
 @media(max-width:900px){.about-photo{max-width:420px}.contact-photo{max-width:560px}}
 @media(max-width:650px){.about-photo,.contact-photo{width:100%;margin-top:28px}}
+
+/* Readable labels, generous navigation targets and a compact mobile portrait. */
+.eyebrow,.proof span,.project-status,.project-link,.contact-links span,figcaption span,footer,.form-privacy{font-size:14px}
+.project-card p{font-size:16px}
+nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 6px}
+.project-link a,.contact-alternative a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:650px){
+ .site-header{flex-wrap:wrap;gap:4px;padding-block:12px}
+ .brand{min-height:44px;font-size:16px}
+ .brand>span:last-child{display:inline}
+ nav{width:100%;gap:8px;justify-content:space-between}
+ nav a{font-size:14px;min-height:44px;padding:10px 14px}
+ .proof span,.eyebrow,.project-status,figcaption span{font-size:14px}
+ .about-photo{aspect-ratio:4/3}
+ .about-photo img{object-position:50% 10%}
+}
