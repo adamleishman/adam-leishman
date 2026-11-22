@@ -680,3 +680,14 @@ footer p {
 .form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 
 .contact-alternative{font-size:14px;margin-top:24px}.contact-alternative a{font-weight:600}.contact .button{background:var(--ink);color:var(--white)}.contact .button:hover{background:var(--accent-dark)}
+
+/* Portraits accompanying the background and contact sections. */
+.about-photo,.contact-photo{margin:34px 0 0;overflow:hidden;border-radius:var(--radius);background:var(--paper-deep)}
+.about-photo{max-width:360px;aspect-ratio:4/5}
+.about-photo img,.contact-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.about-photo img{object-position:50% 25%}
+.contact-photo{max-width:500px;aspect-ratio:4/3}
+.contact-photo img{object-position:50% 35%}
+.about>.section-heading,.contact>div{min-width:0}
+@media(max-width:900px){.about-photo{max-width:420px}.contact-photo{max-width:560px}}
+@media(max-width:650px){.about-photo,.contact-photo{width:100%;margin-top:28px}}
